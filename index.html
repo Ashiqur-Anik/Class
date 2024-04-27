@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+        }
+        .class{
+            flex-direction: column;
+        }
+
+        button {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 19px;
+            cursor: pointer;
+            margin-top: 5px;
+            background-color: rgb(104, 201, 228);
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3> Meeting ID: 302 904 7187
+        Passcode: 235</h3>
+    <div class="class">
+        <button id="Class-1">Class-1</button>
+        <button id="Class-2">Class-2</button>
+    </div>
+
+
+    <script>
+        document.getElementById("Class-1").addEventListener("click", function () {
+            window.location.href = "https://us06web.zoom.us/rec/share/7_TJLlV9_38n2urZHjjQlRjK4ER9l4-d89IOEWHsmBX5a5piI8tawM11sZmg_S6e.64V1tpSn3UgwaE-u";
+        })
+        document.getElementById("Class-2").addEventListener("click", function () {
+            window.location.href = "https://us06web.zoom.us/rec/share/mMZlqRL5UTeTMRRvalPdEXQkoCosO--DHjhFwAkhGa_tcFOy-jwyipst2A03Awak.05J7FkaOg0JceCh2";
+        })
+    </script>
+</body>
+
+</html>

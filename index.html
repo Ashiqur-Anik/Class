@@ -4,27 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Media</title>
     <style>
-        .class {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 20vh;
-        }
-        .class{
-            flex-direction: column;
-            margin-top: 50px;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
         }
 
-        button { 
-            padding-left: 60px;
-            padding-right: 60px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            font-size: 24px;
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .meeting-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .class-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
             cursor: pointer;
-            margin-top: 15px;
             background-color: rgb(104, 201, 228);
             border: none;
             border-radius: 5px;
@@ -33,25 +45,33 @@
 </head>
 
 <body>
-    <h3> Meeting ID: 302 904 7187
-        Passcode: 235</h3>
-    <div class="class">
-        <button id="Class-1">Class-1</button>
-        <button id="Class-2">Class-2</button>
-        <button id="Class-3">Class-3</button>
-    </div>
+    <div class="container">
+        <div class="meeting-info">
+            <h3>Meeting ID: 302 904 7187</h3>
+            <h3>Passcode: 235</h3>
+        </div>
+        <div class="class-buttons">
+            <button id="Class-1">1.Class-1</button>
+            <button id="Class-2">2.Class-2/3</button>
+            <button id="Class-3">3.Class-4</button>
+            <button id="Class-4">4.Class-5/6</button>
 
+        </div>
+    </div>
 
     <script>
         document.getElementById("Class-1").addEventListener("click", function () {
             window.location.href = "https://us06web.zoom.us/rec/share/7_TJLlV9_38n2urZHjjQlRjK4ER9l4-d89IOEWHsmBX5a5piI8tawM11sZmg_S6e.64V1tpSn3UgwaE-u";
-        })
+        });
         document.getElementById("Class-2").addEventListener("click", function () {
             window.location.href = "https://us06web.zoom.us/rec/share/mMZlqRL5UTeTMRRvalPdEXQkoCosO--DHjhFwAkhGa_tcFOy-jwyipst2A03Awak.05J7FkaOg0JceCh2";
-        })
+        });
         document.getElementById("Class-3").addEventListener("click", function () {
             window.location.href = "https://us06web.zoom.us/rec/share/zCAGUwey3yhz0PlmD1sQt0sEr6VJK5DPlhdcd1L9BUcMRCzh7n_G_aPbh_Kv5qKl.dXW8axNSyIz5eLaD";
-        })
+        });
+        document.getElementById("Class-4").addEventListener("click", function () {
+            window.location.href = "https://us06web.zoom.us/rec/share/vB5ahDynR2r-0CuZj4IaUbvznrgOSR_McVp6oupULZAOcxwxf-bWClC0OsrgSULT.xPKfAjphdwJUYzZj";
+        });
     </script>
 </body>
 

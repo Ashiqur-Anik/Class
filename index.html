@@ -10,55 +10,66 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #a9dbe5;
+            background: linear-gradient(to right, #cc2b5e , #753a88)
+
+        }
+
+        .all {
+            margin: 10px 5px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #1acbee;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 5px 5px 20px rgb(49, 46, 46);
         }
 
-        .meeting-info {
+        .title {
             text-align: center;
             margin-bottom: 20px;
+            background: linear-gradient( red , blue);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+            
         }
-
         .class-buttons {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
+            gap: 8px;
         }
-
         button {
-            padding: 25px;
-            font-size: 20px;
-            font-weight: 600;
-            cursor: pointer;
-            background-color: #60cfed;
+            background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+            margin: 5px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            background-size: 200% auto;
+            color: white;
+            border-radius: 10px;
             border: none;
-            border-radius: 5px;
-            
+            box-shadow: 5px 9px 10px #201f1f;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="meeting-info">
-           <h1>Networking Fundamental Class</h1>
-        </div>
-        <div class="class-buttons">
-            <button id="Class-1">1.Class-1</button>
-            <button id="Class-2">2.Class-2/3</button>
-            <button id="Class-3">3.Class-4</button>
-            <button id="Class-4">4.Class-5/6</button>
-            <button id="Class-5">5.Class-5/6 Recap</button>
-            <button id="Class-6">6.Class-6</button>
+    <div class="all">
+        <div class="container">
+            <div class="title">
+                <h1>Networking Fundamental Class</h1>
+            </div>
+            <div class="class-buttons">
+                <button id="Class-1">Class-1</button>
+                <button id="Class-2">Class-2</button>
+                <button id="Class-3">Class-3</button>
+                <button id="Class-4">Class-4</button>
+                <button id="Class-5">Class-5</button>
+                <button id="Class-6">Class-6</button>
 
+            </div>
         </div>
     </div>
 
